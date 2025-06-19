@@ -5,7 +5,14 @@ function ToDoList() {
     const [newTask, setNewTask] = useState('');
 
     function handleInputChange(event) {
+
         setNewTask(event.target.value);
+    }
+
+    function handleKeyDown(event) {
+        if (event.key === 'Enter') {
+            addTask();
+        }
     }
 
     function addTask() {
@@ -46,9 +53,10 @@ function ToDoList() {
             <div>
                 <input
                     type="text"
-                    placeholder='Enter A new task'
+                    placeholder='Enter a new task'
                     value={newTask}
                     onChange={handleInputChange}
+                    onKeyDown={handleKeyDown}
                 />
                 <button
                     className='add-task-button'
