@@ -1,3 +1,20 @@
+# React To-Do List App
+
+This is a simple React To-Do List application that allows users to add, delete, and reorder tasks. 
+
+## Features
+
+- Add new tasks by typing and pressing Enter or clicking the Add button
+- Delete tasks
+- Move tasks up and down
+- Responsive and user-friendly interface
+
+## Installation
+
+1. Clone the repo:
+2. Install dependencies:
+3. Run the app:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
