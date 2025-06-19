@@ -46,11 +46,11 @@ function ToDoList() {
         }
     }
 
-        return (<div classname="to-do-list">
+        return (<div className="to-do-list">
             
             <h1>To-Do List</h1>
 
-            <div>
+            <div className='input-button-wrapper'>
                 <input
                     type="text"
                     placeholder='Enter a new task'
@@ -69,7 +69,7 @@ function ToDoList() {
                     {tasks.map((task, index) => (
                         <li key={index}>
                             <span className="text">{task}</span>
-                            {task}
+
                             <button 
                              className='delete-task-button'
                              onClick={() => deleteTask(index)}>Delete</button>
